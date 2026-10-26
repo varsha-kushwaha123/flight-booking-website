@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0"
+    xmlns="https://jakarta.ee/xml/ns/jakartaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+    https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+
+    <!-- Registration Servlet -->
+    <servlet>
+        <servlet-name>t1</servlet-name>
+        <servlet-class>t1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cancelservlet</servlet-name>
+        <url-pattern>/cancelservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>cancelservlet</servlet-name>
+        <servlet-class>cancelservlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>t1</servlet-name>
+        <url-pattern>/t1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CancelBookingServlet</servlet-name>
+        <url-pattern>/CancelBookingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CancelBookingServlet</servlet-name>
+        <servlet-class>CancelBookingServlet</servlet-class>
+    </servlet>
+
+
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>loginservlet</servlet-name>
+        <servlet-class>loginservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>passenger_insertion</servlet-name>
+        <servlet-class>passenger_insertion</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginservlet</servlet-name>
+        <url-pattern>/loginservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Search Flight Servlet -->
+    <servlet>
+        <servlet-name>search_availability</servlet-name>
+        <servlet-class>search_availability</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>search_availability</servlet-name>
+        <url-pattern>/search_availability</url-pattern>
+    </servlet-mapping>
+
+    <!-- Flight Insert Servlet -->
+    <servlet>
+        <servlet-name>insertion_in_flight</servlet-name>
+        <servlet-class>insertion_in_flight</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>bookingservlet</servlet-name>
+        <servlet-class>bookingservlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>insertion_in_flight</servlet-name>
+        <url-pattern>/insertion_in_flight</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>passenger_insertion</servlet-name>
+        <url-pattern>/passenger_insertion</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>bookingservlet</servlet-name>
+        <url-pattern>/bookingservlet</url-pattern>
+    </servlet-mapping>
+    
+
+    <!-- Home Page -->
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>

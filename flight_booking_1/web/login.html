@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fast Airlines - Login</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#eaf2ff;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .login-box{
+            width:380px;
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align:center;
+            color:#123a7a;
+            margin-bottom:8px;
+        }
+
+        p{
+            text-align:center;
+            color:#666;
+            margin-bottom:20px;
+        }
+
+        label{
+            font-weight:bold;
+            color:#333;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin:8px 0 18px;
+            border:1px solid #ccc;
+            border-radius:8px;
+        }
+
+        .btn{
+            width:100%;
+            padding:12px;
+            background:#2f5bd3;
+            color:white;
+            border:none;
+            border-radius:25px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            background:#1f49b8;
+        }
+
+        .reset{
+            width:100%;
+            padding:12px;
+            margin-top:10px;
+            background:#e5e5e5;
+            border:none;
+            border-radius:25px;
+            cursor:pointer;
+        }
+
+        .link{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        .link a{
+            color:#2f5bd3;
+            text-decoration:none;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h2>✈ Fast Airlines</h2>
+    <p>User Login</p>
+
+    <form action="loginservlet" method="post">
+
+        <label>Email</label>
+        <input type="email" name="t1" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" name="t2" placeholder="Enter your password" required>
+
+        <input type="submit" value="Login" class="btn">
+
+        <input type="reset" value="Reset" class="reset">
+
+    </form>
+
+    <div class="link">
+        New User?
+        <a href="register.html">Register Here</a>
+    </div>
+
+</div>
+
+</body>
+</html>

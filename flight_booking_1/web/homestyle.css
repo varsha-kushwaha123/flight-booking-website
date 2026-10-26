@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+    background:#0a3d62;
+}
+
+.logo{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#ffd32a;
+}
+
+.login-btn{
+    text-decoration:none;
+    background:#ffd32a;
+    color:black;
+    padding:10px 20px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    color:#0a3d62;
+    margin-bottom:20px;
+}
+
+.hero img{
+    width:80%;
+    max-width:850px;
+    border-radius:15px;
+}
+
+.book-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#0a3d62;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+}
+
+.book-btn:hover{
+    background:#145da0;
+}
+
+/* Support */
+.support{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.support p{
+    color:#0077b6;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.support h2{
+    margin-top:10px;
+    color:#333;
+    font-size:30px;
+}
